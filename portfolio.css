@@ -727,6 +727,7 @@ nav button:hover{
         display: flex;
         flex-direction: column;
         gap: 0;
+        height: 0;
     }
     .footer p{
         display: none;
@@ -736,6 +737,7 @@ nav button:hover{
         font-size: 30px;
         text-align: center;
         justify-content: center;
+        padding: 0;
         padding-top: 10px;
     }
     .footer_hr{
