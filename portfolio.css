@@ -601,7 +601,7 @@ nav button:hover{
         gap: 5px;
     }
     .services{
-        height: 150vh;
+        height: 148vh;
         width: 100%;
     }
     .services h1{
@@ -627,7 +627,7 @@ nav button:hover{
     }
     .portfolio{
         height: 110vh;
-        padding-top: 10px;
+        padding-top: 5px;
     }
     .portfolio h1{
         font-size: 40px;
@@ -666,7 +666,7 @@ nav button:hover{
     }
     .contact{
         padding-top: 15px;
-        height: 228vh;
+        height: 226vh;
     }
     .contact h1{
         font-size: 40px;
@@ -724,7 +724,6 @@ nav button:hover{
         color: white;
     }
     .footer{
-        height: 3vh;
         display: flex;
         flex-direction: column;
         gap: 0;
