@@ -547,7 +547,7 @@ nav button:hover{
     }
     .hero_section{
         padding-top: 100px;
-        height: 98vh;
+        height: 130vh;
     }
     .hero_section h1{
         font-size: 36px;
@@ -564,7 +564,7 @@ nav button:hover{
         font-weight: 600;
     }
     .about{
-        height: 85vh;
+        height: 110vh;
         width: 100%;
         padding: 0;
         padding-top: 15px;
@@ -601,7 +601,7 @@ nav button:hover{
         gap: 5px;
     }
     .services{
-        height: 115vh;
+        height: 150vh;
         width: 100%;
     }
     .services h1{
@@ -626,7 +626,7 @@ nav button:hover{
         padding: 5px 10px;
     }
     .portfolio{
-        height: 100vh;
+        height: 110vh;
     }
     .portfolio h1{
         font-size: 40px;
@@ -665,7 +665,7 @@ nav button:hover{
     }
     .contact{
         padding-top: 30px;
-        height: 175vh;
+        height: 230vh;
     }
     .contact h1{
         font-size: 40px;
