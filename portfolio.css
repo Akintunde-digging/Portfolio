@@ -608,7 +608,7 @@ nav button:hover{
         height: auto;
         min-height: 105vh;
         width: 100%;
-        padding-top: 5px;
+        padding-top: 20px;
         padding-bottom: 30px;
     }
     .services h1{
@@ -635,8 +635,8 @@ nav button:hover{
     .portfolio{
         height: auto;
         min-height: 100dvh;
-        padding-top: 5px;
-        padding-bottom: 25px;
+        padding-top: 15px;
+        padding-bottom: 30px;
         margin: 0;
     }
     .portfolio h1{
