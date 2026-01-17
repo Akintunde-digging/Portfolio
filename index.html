@@ -127,7 +127,7 @@
             </div>
 
             <div class="row2">
-                <div class="project3"><a href="">
+                <div class="project3"><a href="https://akintunde-digging.github.io/pricing-card-frontend-mentor-challenge/">
                     <img src="Pricing card.png" alt="pricing card">
                     <div class="overlay">
                     <div class="overlay-text">
@@ -169,13 +169,15 @@
                 </div>
             </div>
             <div class="your_details">
+                <form id="messageForm">
                 <h2>Your Name</h2>
-                <div><form class="name"><input type="text" placeholder="Enter your name"></form></div>
+                <input type="text" name="name" placeholder="Enter your name" required>
                 <h2>Your Email</h2>
-                <div><form class="email"><input type="email" placeholder="Enter your email"></form></div>
+                <input type="email" name="email" placeholder="Enter your email" required>
                 <h2>Write your message here</h2>
-                <div><form class="your_message"><textarea name="message" placeholder="Enter your message"></textarea></form></div>
-                <div class="message_button"><button>Submit Now</button></div>
+                <textarea name="message" placeholder="Enter your message" required></textarea>
+                <div class="message_button"><button type="submit">Submit Now</button></div>
+                </form>
             </div>
         </div>
     </div>
