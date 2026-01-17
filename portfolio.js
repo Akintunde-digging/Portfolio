@@ -21,3 +21,25 @@ const hamburger = document.getElementById('hamburger');
             hamburger.classList.add('fa-bars');
         });
     });
+
+
+
+    document.getElementById("messageForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  fetch("https://formspree.io/f/xnjjjway", {
+    method: "POST",
+    body: new FormData(this),
+    headers: {
+      'Accept': 'application/json'
+    }
+  })
+  .then(response => {
+    if (response.ok) {
+      alert("Thanks for your message, Akintunde will get back to you shortly");
+      this.reset();
+    } else {
+      alert("Something went wrong");
+    }
+  });
+});
