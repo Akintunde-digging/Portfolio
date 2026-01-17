@@ -547,7 +547,8 @@ nav button:hover{
     }
     .hero_section{
         padding-top: 100px;
-        height: 120vh;
+        height: auto;
+        min-height: 100dvh;
     }
     .hero_section h1{
         font-size: 36px;
@@ -564,7 +565,8 @@ nav button:hover{
         font-weight: 600;
     }
     .about{
-        height: 100vh;
+        height: auto;
+        min-height: 100dvh;
         width: 100%;
         padding: 0;
         padding-top: 15px;
@@ -601,8 +603,10 @@ nav button:hover{
         gap: 5px;
     }
     .services{
-        height: 148vh;
+        height: auto;
+        min-height: 105vh;
         width: 100%;
+        padding-top: 5px;
     }
     .services h1{
         font-size: 40px;
@@ -626,7 +630,7 @@ nav button:hover{
         padding: 5px 10px;
     }
     .portfolio{
-        height: 110vh;
+        min-height: 100dvh;
         padding-top: 5px;
     }
     .portfolio h1{
@@ -666,7 +670,9 @@ nav button:hover{
     }
     .contact{
         padding-top: 15px;
-        height: 226vh;
+        height: auto;
+        min-height: 100dvh;
+        
     }
     .contact h1{
         font-size: 40px;
@@ -711,7 +717,7 @@ nav button:hover{
     .message_button{
         width: 100%;
         align-items: center;
-        padding-left: 20px;
+        padding-left: 13px;
         padding-top: 20px;
        
     }
@@ -738,7 +744,7 @@ nav button:hover{
         text-align: center;
         justify-content: center;
         padding: 0;
-        padding-top: 10px;
+        padding-top: 5px;
     }
     .footer_hr{
         display: none;
