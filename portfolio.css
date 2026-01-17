@@ -636,7 +636,7 @@ nav button:hover{
         height: auto;
         min-height: 100dvh;
         padding-top: 5px;
-        padding-bottom: 0;
+        padding-bottom: 25px;
         margin: 0;
     }
     .portfolio h1{
@@ -644,7 +644,7 @@ nav button:hover{
     }
      .all_projects{
         width: 95%;
-        height: 110vh;
+        height: auto;
         gap: 0;
         padding-left: 10px;
     }
@@ -678,8 +678,8 @@ nav button:hover{
         height: auto;
         min-height: 100dvh;
         margin: 0;
-        padding-top: 0;
-        padding-bottom: 30px;
+        padding-top: 10px;
+        padding-bottom: 35px;
     }
     .contact h1{
         font-size: 40px;
