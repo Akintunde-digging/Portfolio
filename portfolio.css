@@ -751,7 +751,8 @@ nav button:hover{
         text-align: center;
         justify-content: center;
         padding: 0;
-        padding-top: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     .footer_hr{
         display: none;
