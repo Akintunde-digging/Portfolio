@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap');
+html{
+  font-family: 'Nunito', sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body{
+    color: white;
+    margin: 0;
+    background-color: #1c1c1c;
+    padding: 0 40px;
+}
+ul{  
+    list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+nav{
+  color: white;
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 3px solid rgba(139, 139, 139, 0.096);
+}
+nav a{
+    color: white;
+}
+nav a:link{
+    text-decoration: none;
+}
+nav a:hover {
+    color: orange;
+    font-weight: 700;
+}
+.akintunde{
+    font-size: 22px;
+    font-weight: 900;
+}
+nav button{
+    color: white;
+    background-color: #1c1c1c;
+    border-radius: 25px;
+    border-color: white;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+nav button:hover{
+    cursor: pointer;
+}
+.button_text{
+    color: orange;
+}
+.hero_section{
+    padding-top: 100px;
+    height: 90vh;
+    width: 100%;
+    text-align: center;
+}
+.isaac_container{
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.isaac_container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero_section span{
+    color: orange;
+}
+.hero_section h1{
+    font-size: 38px;
+}
+.hero_section p{
+    font-weight: 600;
+    padding-top: 20px;
+}
+.the_buttons{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding-top: 20px;
+}
+ .the_buttons button{
+    color: white;
+    background-color: #1c1c1c;
+    border-radius: 25px;
+    border-color: white;
+    padding: 14px 25px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.the_buttons button:hover{
+    cursor: pointer;
+}
+.about{
+    height: 100vh;
+    width: 100%;
+}
+.about h1{
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+}
+.picsAndText{
+    display: flex;
+    width: 100%;
+    height: 65vh;
+    gap: 30px;
+    padding-top: 50px;
+}
+.picture{
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+    padding: 0 30px;
+    
+}
+.picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.textAndFramework{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.frameworks{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.langAndBar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.langAndBar p{
+    min-width: 130px;
+}
+
+.langAndBar hr{
+    margin: 0;
+    height: 8px;
+    border: 4px;
+    border-radius: 4px;
+    outline-color: none;
+    background-color: orange;
+    text-align: start;
+}
+.services{
+    height: 100vh;
+    width: 100%;
+    padding-top: 40px;
+}
+.services h1{
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+}
+.my_services{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 30px;
+}
+.first_row, .second_row{
+    display: flex;
+    gap: 70px;
+    text-align: center;
+    padding: 0 30px;
+}
+.i, .ii, .iii, .iv{
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px 40px;
+}
+.my_services h2{
+    font-size: 20px;
+    font-weight: 700;
+    color: orange;
+}
+.my_services p{
+    font-size: 14px;
+    font-weight: 500;
+}
+.portfolio{
+    height: 120vh;
+    width: 100%;
+    padding-top: 30px;
+}
+.portfolio h1{
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+}
+.all_projects{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+}
+.all_projects .row1{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    gap: 60px;
+    padding-left: 50px;
+}
+.project1, .project2{
+    width: 500px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.project1 img, .project2 img, .project3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.all_projects .row2{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    padding: 50px 0 50px 20px;
+}
+.project3{
+    width: 500px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+.overlay-text{
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.overlay-text h3{
+    color: orange;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.overlay-text p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.project1:hover .overlay, .project2:hover .overlay, .project3:hover .overlay {
+    opacity: 1;
+}
+
+.project1:hover img, .project2:hover img, .project3:hover img {
+    transform: scale(1.1);
+}
+
+
+
+.contact{
+    height: 130vh;
+    width: 100%;
+}
+.contact h1{
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+}
+.contact .both{
+    display: flex;
+    width: 100%;
+    padding-left: 80px;
+    gap: 40px;
+    padding-top: 20px;
+}
+.let_us_talk{
+    width: 35%;
+    padding-left: 30px;
+    padding-right: 100px;
+}
+.let_us_talk h3{
+    font-size: 40px;
+    font-weight: 800;
+    color: orange;
+    height: 6vh;
+}
+.your_details{
+    width: 65%;
+}
+.your_details h2{
+    font-size: 18px;
+}
+.my_contact_details{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding-top: 20px;
+}
+.contact_details{
+    align-items: center;
+    display: flex;
+    gap: 15px;
+}
+.contact_details i{
+    font-size: 26px;
+}
+.contact_details a{
+    color: white;
+}
+.contact_details a:link{
+    text-decoration: none;
+}
+form{
+    width: 100%;
+}
+input[type="text"], input[type="email"]{
+  width: 70%;
+  height: 30px;
+  font-size: 14px;
+  padding: 15px;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+textarea{
+    width: 70%;
+    height: 170px;
+    font-size: 14px;
+    padding: 15px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+input[type="email"]::placeholder, input[type="text"]::placeholder, textarea::placeholder{
+  font-size: 14px;
+}
+.message_button{
+    padding-top: 30px;
+}
+.message_button button{
+    color: white;
+    background-color: #1c1c1c;
+    border-radius: 25px;
+    border-color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.message_button button:hover{
+    cursor: pointer;
+}
+.footer{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    gap: 650px;
+}
+.footer p{
+    font-size: 14px;
+    padding-top: 5px;
+}
+.socials{
+    display: flex;
+    font-size: 24px;
+    gap: 15px;
+    align-items: center;
+}
+.socials a{
+    color: white;
+}
+.socials a:hover{
+    color: orange;
+}
+nav button,.the_buttons button,.message_button button{
+    border:2px solid white;
+}
+nav button:hover, .the_buttons button:hover, .message_button button:hover{
+    color: orange;
+}
+nav button:hover{
+    border-color: orange;
+    color: white;
+}
+
+
+
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    background: none;
+    border: none;
+}
+.nav-right{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    
+   .nav-right{
+    display: flex;
+    align-items: center;
+   }
+   .hamburger{
+    display: block;
+    font-size: 50px;
+   }
+   .akintunde{
+    font-size: 40px;
+   }
+   .home-contact {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #1c1c1c;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        z-index: 1000;
+        border-top: 1px solid rgba(139, 139, 139, 0.3);
+    }
+   .button_text{
+    display: none;
+   }
+   .home-contact.active {
+        max-height: 500px;
+    }
+    .home-contact ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 60px 0;
+    }
+    .home-contact ul li {
+        width: 20%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 20px;
+    }
+   nav {
+        position: relative;
+    }
+    .hero_section{
+        padding-top: 250px;
+        height: 100vh;
+    }
+    .hero_section h1{
+        font-size: 44px;
+        padding-top: 40px;
+    }
+    .hero_section p{
+        font-size: 24px;
+    }
+    .hero_section .the_buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    .the_buttons button{
+        font-size: 24px;
+        border-radius: 40px;
+    }
+    .the_buttons .connect{
+        color: orange;
+    }
+    .the_buttons .connect:hover{
+        color: white;
+        border-color: orange;
+    }
+    .isaac_container{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    body{
+        padding: 0 10px;
+    }
+    .hamburger{
+    font-size: 32px;
+   }
+   .akintunde{
+    font-size: 24px;
+   }
+    .hero_section .the_buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    .home-contact ul {
+        padding: 5px 0;
+    }
+    .home-contact ul li {
+        width: 20%;
+        padding: 10px 0;
+        font-size: 14px;
+    }
+    .hero_section{
+        padding-top: 100px;
+        height: auto;
+        min-height: 100dvh;
+        padding-bottom: 25px;
+    }
+    .hero_section h1{
+        font-size: 36px;
+    }
+    .hero_section p{
+        font-size: 20px;
+    }
+    .isaac_container{
+        width: 180px;
+        height: 180px;
+    }
+    .the_buttons button{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .about{
+        height: auto;
+        min-height: 100dvh;
+        width: 100%;
+        padding: 0;
+        padding-top: 15px;
+        padding-bottom: 25px;
+    }
+    .about h1{
+        font-size: 45px;
+        text-align: start;
+        padding-left: 20px;
+    }
+    .picsAndText{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+    .picture{
+        display: none;
+        width: 0;
+    }
+    .textAndFramework{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .text{
+        width: 100%;
+        padding: 20px;
+        font-size: 18px;
+        text-align: start;
+    }
+    .frameworks{
+        padding-left: 20px;
+        gap: 5px;
+    }
+    .services{
+        height: auto;
+        min-height: 105dvh;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .services h1{
+        font-size: 40px;
+    }
+    .my_services{
+        padding: 0;
+        padding-top: 10px;
+        width: 80%;
+        gap: 20px;
+    }
+    .my_services .first_row, .my_services .second_row{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        padding-left: 25px;
+        gap: 20px;
+    }
+    .i, .ii, .iii, .iv{
+        width: 100%;
+        padding: 5px 10px;
+    }
+    .portfolio{
+        height: auto;
+        min-height: 100dvh;
+        padding-top: 15px;
+        padding-bottom: 30px;
+        margin: 0;
+    }
+    .portfolio h1{
+        font-size: 40px;
+    }
+     .all_projects{
+        width: 95%;
+        height: auto;
+        gap: 0;
+        padding-left: 10px;
+    }
+    .all_projects .row1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        gap: 20px;
+    }
+    .all_projects .row2{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .project1, .project2, .project3{
+        width: 100%;
+        height: calc(100%/3);
+    }
+    .project1, .project2{
+        height: 200px;
+    }
+    .project3{
+        height: 200px;
+    }
+    .project1:hover, .project2:hover, .project3:hover{
+        border: 2px solid orange;
+    }
+    .project1:active,
+    .project2:active,
+    .project3:active {
+        border: 3px solid orange;
+        box-shadow: 0 0 20px orange, 0 0 40px orange; /* Glowing effect */
+        transform: scale(1.02); /* Slight zoom */
+    }
+    .overlay{
+        opacity: 1;
+    }
+    .contact{
+        height: auto;
+        min-height: 100dvh;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 35px;
+    }
+    .contact h1{
+        font-size: 40px;
+        text-align: start;
+        padding: 0;
+        padding-left: 20px;
+        height: 4vh;
+    }
+    .contact .both{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        padding-left: 20px; 
+    }
+    .let_us_talk h3{
+        height: 4vh;
+        font-size: 35px;
+    }
+    .contact .let_us_talk{
+        padding: 0;
+        width: 100%;
+    }
+    .let_us_talk p{
+        font-size: 19px;
+        font-weight: 500;
+        line-height: 1.8;
+    }
+    .your_details{
+        width: 100%;
+    }
+    input[type="text"], input[type="email"], textarea{
+        width: 90%;
+        font-size: 20px;
+    }
+    input[type="email"]::placeholder, input[type="text"]::placeholder, textarea::placeholder{
+        font-size: 20px;
+    }
+    .your_details h2{
+        font-size: 24px;
+    }
+    .message_button{
+        width: 100%;
+        align-items: center;
+        padding-left: 13px;
+        padding-top: 20px;
+       
+    }
+    .message_button button{
+        padding: 15px 100px;
+        color: orange;
+    }
+    .message_button button:hover{
+        border: 4px solid orange;
+        color: white;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        height: 0;
+    }
+    .footer p{
+        display: none;
+    }
+    .socials{
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+        justify-content: center;
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .footer_hr{
+        display: none;
+    }
+}
