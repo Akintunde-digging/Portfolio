@@ -447,17 +447,19 @@ nav button:hover{
 }
 
 @media screen and (max-width: 768px){
-    
+     body{
+        padding: 0 15px;
+    }
    .nav-right{
     display: flex;
     align-items: center;
    }
    .hamburger{
     display: block;
-    font-size: 50px;
+    font-size: 35px;
    }
    .akintunde{
-    font-size: 40px;
+    font-size: 25px;
    }
    .home-contact {
         position: absolute;
@@ -475,39 +477,42 @@ nav button:hover{
     display: none;
    }
    .home-contact.active {
-        max-height: 500px;
+        max-height: 300px;
     }
     .home-contact ul {
         flex-direction: column;
         gap: 0;
-        padding: 60px 0;
+        padding: 40px 0;
     }
     .home-contact ul li {
         width: 20%;
         text-align: center;
         padding: 15px 0;
-        font-size: 20px;
+        font-size: 15px;
     }
    nav {
         position: relative;
     }
     .hero_section{
-        padding-top: 250px;
-        height: 100vh;
+        padding-top: 80px;
+        height: auto;
+        min-height: 100dvh;
+        padding-bottom: 30px;
     }
     .hero_section h1{
-        font-size: 44px;
-        padding-top: 40px;
+        font-size: 35px;
+        padding-top: 25px;
     }
     .hero_section p{
-        font-size: 24px;
+        font-size: 20px;
     }
     .hero_section .the_buttons{
         display: flex;
         flex-direction: column;
     }
     .the_buttons button{
-        font-size: 24px;
+        font-size: 20px;
+        font-weight: 600;
         border-radius: 40px;
     }
     .the_buttons .connect{
@@ -518,8 +523,212 @@ nav button:hover{
         border-color: orange;
     }
     .isaac_container{
-        width: 250px;
-        height: 250px;
+        width: 185px;
+        height: 185px;
+    }
+    .picture{
+        display: none;
+        width: 0;
+    }
+    .about{
+        height: auto;
+        min-height: 100dvh;
+        width: 100%;
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .about h1{
+        font-size: 50px;
+        text-align: start;
+        padding-left: 10px;
+    }
+    .about p{
+        font-size: 18px;
+    }
+    .picsAndText{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+    .textAndFramework{
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+    }
+    .text{
+        width: 100%;
+        padding: 10px;
+        font-size: 17px;
+        text-align: start;
+    }
+    .frameworks{
+        padding-left: 20px;
+        gap: 5px;
+    }
+    .services{
+        height: auto;
+        min-height: 100dvh;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 30px;
+    }
+    .services h1{
+        font-size: 40px;
+    }
+    .my_services{
+        padding: 0;
+        padding-top: 10px;
+        width: 93%;
+        gap: 20px;
+    }
+    .my_services .first_row, .my_services .second_row{
+        display: flex;
+        width: 100%;
+        padding: 0;
+        padding-left: 25px;
+        gap: 20px;
+    }
+    .portfolio{
+        height: auto;
+        min-height: 100dvh;
+        padding-top: 15px;
+        padding-bottom: 35px;
+        margin: 0;
+    }
+    .portfolio h1{
+        font-size: 45px;
+    }
+     .all_projects{
+        width: 95%;
+        height: auto;
+        gap: 0;
+        padding-left: 15px;
+    }
+    .all_projects .row1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        gap: 20px;
+    }
+    .all_projects .row2{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .project1, .project2, .project3{
+        width: 100%;
+        height: calc(100%/3);
+    }
+    .project1, .project2{
+        height: 200px;
+    }
+    .project3{
+        height: 200px;
+    }
+    .project1:hover, .project2:hover, .project3:hover{
+        border: 2px solid orange;
+    }
+    .project1:active,
+    .project2:active,
+    .project3:active {
+        border: 3px solid orange;
+        box-shadow: 0 0 20px orange, 0 0 40px orange; /* Glowing effect */
+        transform: scale(1.02); /* Slight zoom */
+    }
+    .overlay{
+        opacity: 1;
+    }
+    .contact{
+        height: auto;
+        min-height: 100dvh;
+        margin: 0;
+        padding-top: 25px;
+        padding-bottom: 35px;
+    }
+    .contact h1{
+        font-size: 50px;
+        text-align: start;
+        padding: 0;
+        padding-left: 20px;
+        height: 4vh;
+    }
+    .contact .both{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        padding-left: 20px; 
+    }
+    .let_us_talk h3{
+        height: 4vh;
+        font-size: 35px;
+    }
+    .contact .let_us_talk{
+        padding: 0;
+        width: 100%;
+    }
+    .let_us_talk p{
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 1.8;
+    }
+    .your_details{
+        width: 100%;
+    }
+    .my_contact_details{
+        padding-top: 0;
+    }
+    input[type="text"], input[type="email"], textarea{
+        width: 90%;
+        font-size: 18px;
+    }
+    input[type="email"]::placeholder, input[type="text"]::placeholder, textarea::placeholder{
+        font-size: 18px;
+    }
+    .your_details h2{
+        font-size: 20px;
+    }
+    .message_button{
+        width: 100%;
+        align-items: center;
+        padding-left: 10px;
+        padding-top: 20px;
+       
+       
+    }
+    .message_button button{
+        padding: 15px 280px;
+        color: orange;
+    }
+    .message_button button:hover{
+        border: 4px solid orange;
+        color: white;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        height: 0;
+    }
+    .footer p{
+        display: none;
+    }
+    .socials{
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+        justify-content: center;
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .footer_hr{
+        display: none;
     }
 }
 
@@ -553,6 +762,7 @@ nav button:hover{
     }
     .hero_section h1{
         font-size: 36px;
+        padding-top: 40px;
     }
     .hero_section p{
         font-size: 20px;
@@ -577,6 +787,9 @@ nav button:hover{
         font-size: 45px;
         text-align: start;
         padding-left: 20px;
+    }
+    .about p{
+        font-size: 15px;
     }
     .picsAndText{
         padding: 0;
@@ -720,6 +933,9 @@ nav button:hover{
     }
     .your_details{
         width: 100%;
+    }
+    .my_contact_details{
+        padding-top: 20px;
     }
     input[type="text"], input[type="email"], textarea{
         width: 90%;
