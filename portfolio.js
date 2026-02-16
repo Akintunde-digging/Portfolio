@@ -62,3 +62,25 @@ const hamburger = document.getElementById('hamburger');
     button.disabled = false;
   });
 });
+
+
+
+
+
+const observerOptions = {
+    threshold: 0.2,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+
+const slideElements = document.querySelectorAll('.slide-in');
+slideElements.forEach(el => observer.observe(el));
