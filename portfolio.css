@@ -223,15 +223,18 @@ nav button:hover{
     height: 75vh;
     display: flex;
     flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    padding-left: 20px;
 }
-.all_projects .row1{
+.all_projects .row1, .all_projects .row2{
     width: 100%;
     height: 50%;
     display: flex;
-    gap: 60px;
+    gap: 40px;
     padding-left: 50px;
 }
-.project1, .project2{
+.project1, .project2, .project3, .project4{
     width: 500px;
     height: 100%;
     overflow: hidden;
@@ -239,28 +242,14 @@ nav button:hover{
     cursor: pointer;
     border-radius: 10px;
 }
-.project1 img, .project2 img, .project3 img{
+.project1 img, .project2 img, .project3 img, .project4 img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
-.all_projects .row2{
-    width: 100%;
-    height: 50%;
-    display: flex;
-    padding: 50px 0 50px 20px;
-}
-.project3{
-    width: 500px;
-    height: 100%;
-    overflow: hidden;
-    margin: 0 auto;
-    position: relative;
-    cursor: pointer;
-    border-radius: 10px;
-}
+
 .overlay{
     position: absolute;
     top: 0;
@@ -293,11 +282,11 @@ nav button:hover{
     font-weight: 400;
 }
 
-.project1:hover .overlay, .project2:hover .overlay, .project3:hover .overlay {
+.project1:hover .overlay, .project2:hover .overlay, .project3:hover .overlay, .project4:hover .overlay {
     opacity: 1;
 }
 
-.project1:hover img, .project2:hover img, .project3:hover img {
+.project1:hover img, .project2:hover img, .project3:hover img, .project4:hover img{
     transform: scale(1.1);
 }
 
@@ -446,7 +435,28 @@ nav button:hover{
     display: none;
 }
 
+
 @media screen and (max-width: 768px){
+   @keyframes pulse-border {
+        0%, 100% {
+            border-color: orange;
+            box-shadow: 0 0 0 0 rgba(255, 165, 0, 0.7);
+        }
+        50% {
+            border-color: orange;
+            box-shadow: 0 0 0 10px rgba(255, 165, 0, 0);
+        }
+    }   
+    .slide-in.active {
+        opacity: 1;
+        transform: translateX(0);
+        animation: pulse-border 2s ease-in-out;
+    }
+    .project1, .project2, .project3, .project4{
+        width: 100%;
+        height: 200px;
+        transition: all 0.4s ease;
+    }
      body{
         padding: 0 15px;
     }
@@ -473,6 +483,7 @@ nav button:hover{
         z-index: 1000;
         border-top: 1px solid rgba(139, 139, 139, 0.3);
     }
+    
    .button_text{
     display: none;
    }
@@ -604,44 +615,37 @@ nav button:hover{
      .all_projects{
         width: 95%;
         height: auto;
-        gap: 0;
+        gap: 20px;
         padding-left: 15px;
     }
-    .all_projects .row1{
+    .all_projects .row1, .all_projects .row2{
         display: flex;
         flex-direction: column;
         width: 100%;
         padding: 0;
         gap: 20px;
     }
-    .all_projects .row2{
+    .project1, .project2, .project3, .project4{
         width: 100%;
-        height: 100%;
-        padding: 0;
-        margin: 0;
+        height: calc(100%/4);
     }
-    .project1, .project2, .project3{
-        width: 100%;
-        height: calc(100%/3);
-    }
-    .project1, .project2{
+    .project1, .project2, .project3, .project4{
         height: 200px;
     }
-    .project3{
-        height: 200px;
-    }
-    .project1:hover, .project2:hover, .project3:hover{
+    .project1:hover, .project2:hover, .project3:hover, .project4:hover{
         border: 2px solid orange;
     }
     .project1:active,
     .project2:active,
-    .project3:active {
+    .project3:active,
+    .project4:active {
         border: 3px solid orange;
-        box-shadow: 0 0 20px orange, 0 0 40px orange; /* Glowing effect */
-        transform: scale(1.02); /* Slight zoom */
+        box-shadow: 0 0 20px orange, 0 0 40px orange;
+        transform: scale(1.02);
     }
     .overlay{
         opacity: 1;
+        background-color: rgba(0, 0, 0, 0.85);
     }
     .contact{
         height: auto;
@@ -729,6 +733,26 @@ nav button:hover{
     }
     .footer_hr{
         display: none;
+    }
+    .slide-in {
+        opacity: 0;
+        transform: translateX(50px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .slide-in.active {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .slide-in:nth-child(1) {
+        transition-delay: 0.1s;
+    }
+
+    .slide-in:nth-child(2) {
+        transition-delay: 0.2s;
+    }
+
+    .slide-in:nth-child(3) {
+        transition-delay: 0.3s;
     }
 }
 
@@ -858,41 +882,33 @@ nav button:hover{
      .all_projects{
         width: 95%;
         height: auto;
-        gap: 0;
+        gap: 20px;
         padding-left: 10px;
     }
-    .all_projects .row1{
+    .all_projects .row1, .all_projects .row2{
         display: flex;
         flex-direction: column;
         width: 100%;
         padding: 0;
         gap: 20px;
     }
-    .all_projects .row2{
+    .project1, .project2, .project3, .project4{
         width: 100%;
-        height: 100%;
-        padding: 0;
-        margin: 0;
+        height: calc(100%/4);
     }
-    .project1, .project2, .project3{
-        width: 100%;
-        height: calc(100%/3);
-    }
-    .project1, .project2{
+    .project1, .project2, .project3, .project4{
         height: 200px;
     }
-    .project3{
-        height: 200px;
-    }
-    .project1:hover, .project2:hover, .project3:hover{
+    .project1:hover, .project2:hover, .project3:hover, .project4:hover{
         border: 2px solid orange;
     }
     .project1:active,
     .project2:active,
-    .project3:active {
+    .project3:active,
+    .project4:active {
         border: 3px solid orange;
-        box-shadow: 0 0 20px orange, 0 0 40px orange; /* Glowing effect */
-        transform: scale(1.02); /* Slight zoom */
+        box-shadow: 0 0 20px orange, 0 0 40px orange;
+        transform: scale(1.02); 
     }
     .overlay{
         opacity: 1;
@@ -983,4 +999,24 @@ nav button:hover{
     .footer_hr{
         display: none;
     }
-}
+    .slide-in {
+        opacity: 0;
+        transform: translateX(50px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .slide-in.active {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .slide-in:nth-child(1) {
+        transition-delay: 0.1s;
+    }
+
+    .slide-in:nth-child(2) {
+        transition-delay: 0.2s;
+    }
+
+    .slide-in:nth-child(3) {
+        transition-delay: 0.3s;
+    }
+    }
