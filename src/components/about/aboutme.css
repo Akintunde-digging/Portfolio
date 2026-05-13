@@ -1,0 +1,121 @@
+.aboutMeSection{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 70px;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+}
+.titleAndP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 900px;
+    gap: 60px;
+}
+.titleAndP h1{
+    font-size: 53px;
+    font-weight: 800;
+}
+.titleAndP p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #d1d5dc;
+}
+.stacksAndPractices{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 150px;
+}
+.stacks, .practices{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.stackAndLine, .practicesAndLine{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.stackAndLine span, .practicesAndLine span{
+    font-size: 11px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #d1d5dc;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+.stackAndLine .stackLine, .practicesAndLine .practiceLine{
+    flex: 1;
+    height: 1px;
+    background-color: #d1d5dc;
+    opacity: 0.2;
+}
+.stackAndLine .stackLine:first-child, .practicesAndLine .practiceLine:first-child{
+    background: linear-gradient(to left, #d1d5dc, transparent);
+}
+.stackAndLine .stackLine:last-child, .practicesAndLine .practiceLine:last-child{
+    background: linear-gradient(to right, #d1d5dc, transparent);
+}
+.stacklogoAndName, .practicesLogoAndName{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.stacklogoAndName img, .practicesLogoAndName img{
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
+.eachStackLogoAndName, .eachPracticesLogoAndName{
+    display: flex;
+    flex-direction: column;
+    padding: 22px 14px;
+    background-color: #ffffff0a;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    border: 1px solid #ffffff12;
+    border-radius: 14px;
+}
+.eachStackLogoAndName span, .eachPracticesLogoAndName span{
+    font-size: 13px;
+    font-weight: 500;
+    opacity: 0.8;
+    letter-spacing: 0.4px;
+}
+
+@media (max-width: 768px) {
+    .aboutMeSection{
+        padding: 65px 24px 0;
+    }
+    .titleAndP{
+        gap: 40px;
+    }
+    .titleAndP h1{
+        font-size: 43px;
+    }
+    .titleAndP p{
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    .stacksAndPractices{
+        gap: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutMeSection{
+        padding-inline: 16px;
+    }
+    .titleAndP h1{
+        font-size: 40px;
+    }
+}

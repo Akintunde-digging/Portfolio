@@ -1,0 +1,96 @@
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: black;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+nav{
+    color: white;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+nav a{
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: orange;
+}
+.akintunde{
+    font-size: 24px;
+    font-weight: 900;
+}
+nav .navContactButton{
+    background-color: #000;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    font-size: 14px;
+    padding: 10px 20px;
+    font-weight: 600;
+    color: #ffa500;
+}
+nav .navContactButton:hover{
+    cursor: pointer;
+    color: #fff;
+    border: 2px solid #ffa500;
+}
+.hamburger{
+    display: none;
+    z-index: 1000;
+}
+@media (max-width: 768px) {
+    .hamburger{
+        display: block;
+        font-size: 25px;
+        border: none;
+        color: #ffff;
+        background-color: transparent;
+    }
+    .navContactButtonLink{
+        display: none;
+    }
+    nav{
+        padding-inline: 24px;
+    }
+    .homeToContact{
+        position: fixed;
+        top: 60px;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        z-index: 999;
+        background-color: #000;
+        transition: transform 0.3s ease;
+        transform: translateX(100%);
+    }
+    .homeToContact.open{
+        transform: translateX(0);
+    }
+    ul{
+        flex-direction: column;
+        gap: 30px;
+    }
+    nav a{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav{
+        padding-inline: 16px;
+    }
+}

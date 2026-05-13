@@ -1,0 +1,88 @@
+.myProjects{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 70px;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+.myProjects h1{
+    font-size: 53px;
+    font-weight: 800;
+    text-align: center;
+}
+.myProjects .allProjects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    max-width: 1200px;
+    gap: 40px;
+}
+.eachProjects{
+    display: flex;
+    background-color: #ffffff05;
+    border:  1px solid #ffffff0d;
+    border-radius: 15px;
+    padding: 20px;
+}
+.eachProjects a{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-decoration: none;
+    color: inherit;
+}
+.eachProjects .imgDiv{
+    overflow: hidden;
+    height: 200px;
+    border: 1px solid #ffffff1a;
+    border-radius: 12px;
+}
+.eachProjects img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 8% center;
+}
+.projectText{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.projectText h3{
+    font-size: 20px;
+    font-weight: 900;
+}
+.projectText p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #d1d5dc;
+    opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+    .myProjects .allProjects{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .myProjects{
+        padding: 80px 24px 0;
+    }
+    .myProjects h1{
+        font-size: 43px;
+    }
+    .myProjects .allProjects{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .myProjects{
+        padding-inline: 16px;
+    }
+    .myProjects h1{
+        font-size: 40px;
+    }
+}

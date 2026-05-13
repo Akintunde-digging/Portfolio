@@ -1,0 +1,90 @@
+.myApproach{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 70px;
+    gap: 60px;
+    width: 100%;
+}
+.myApproach h1{
+    font-size: 53px;
+    font-weight: 800;
+    text-align: center;
+}
+.allApproaches{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 50px;
+}
+.eachApproaches{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 16px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    width: 300px;
+}
+.eachApproaches .mainText{
+    font-size: 100px;
+    transition: opacity 0.3s ease;
+}
+.eachApproaches .hoverText{
+    position: absolute;
+    inset: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 25px;
+    font-weight: 700;
+}
+.eachApproaches:hover .hoverText{
+    opacity: 1;
+}
+.eachApproaches:hover .mainText{
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    .myApproach{
+        padding: 80px 24px 0;
+    }
+    .myApproach h1{
+        font-size: 43px;
+    }
+    .allApproaches{
+        padding-inline: 50px;
+    }
+    .eachApproaches .hoverText{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .myApproach{
+        padding-inline: 16px;
+    }
+    .myApproach h1{
+        font-size: 40px;
+    }
+    .allApproaches{
+        padding-inline: 0;
+    }
+    .eachApproaches .hoverText{
+        font-size: 22px;
+    }
+}

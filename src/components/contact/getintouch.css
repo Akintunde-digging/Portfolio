@@ -1,0 +1,142 @@
+.getInTouch{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 70px;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 50px;
+}
+.getInTouch h1{
+    font-size: 53px;
+    font-weight: 800;
+    text-align: center;
+}
+.letsTalkAndForm{
+    display: flex;
+    gap: 100px;
+}
+.letsTalk{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.letsTalk h3{
+    font-size: 40px;
+    font-weight: 800;
+    color: #ffa500;
+}
+.letsTalk p{
+    max-width: 400px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #d1d5dc;
+}
+.contactDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.contactDetails .eachContactDetails{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.eachContactDetails span{
+    font-size: 16px;
+    font-weight: 600;
+    color: #d1d5dc;
+}
+.eachContactDetails a{
+    text-decoration: none;
+    color: inherit;
+}
+.eachContactDetails .contactIcon{
+    display: block;
+    font-size: 26px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form input{
+    width: 500px;
+    height: 55px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    color: #d1d5dc8f;
+    font-size: 16px;
+    font-weight: 500;
+}
+form textarea{
+    width: 500px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    padding: 30px 20px;
+}
+form label{
+    font-size: 18px;
+    font-weight: 700;
+    color: #d1d5dc;
+}
+input::placeholder, textarea::placeholder{
+    font-size: 16px;
+    font-weight: 700;
+}
+form button{
+    width: fit-content;
+    color: #ffa500;
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 18px 30px;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: 700;
+}
+form button:hover{
+    cursor: pointer;
+    border: 2px solid transparent;
+    color: #000;
+    background-color: #ffa500;
+}
+@media (max-width: 1024px) {
+    .letsTalkAndForm{
+        width: 100%;
+        gap: 80px;
+    }
+    form{
+        width: 100%;
+    }
+    form input, form textarea{
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .getInTouch{
+        padding: 80px 24px 0;
+        gap: 40px;
+    }
+    .getInTouch h1{
+        font-size: 43px;
+    }
+    .letsTalkAndForm{
+        flex-direction: column;
+    }
+    form button{
+        width: 100%;
+        padding-block: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .getInTouch{
+        padding-inline: 16px;
+    }
+    .getInTouch h1{
+        font-size: 40px;
+    }
+}

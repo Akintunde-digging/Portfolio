@@ -1,0 +1,99 @@
+.footerSection{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 70px;
+    gap: 20px;
+}
+.footerNameAndCareer{
+    display: flex;
+    flex-direction: column;
+}
+.footerNameAndCareer .footerAkintunde{
+    font-size: 24px;
+    font-weight: 900;
+}
+.footerNameAndCareer .footerCareer{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #ffa500;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.footerCareer .dash{
+    background-color: #ffa500;
+    width: 40px;
+    height: 2px;
+}
+.footerLine{
+    width: 100%;
+    height: 1px;
+    background-color: #d1d5dc;
+    opacity: 0.5;
+}
+.rightsAndSocials{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rightsAndSocials p{
+    font-size: 16px;
+}
+.socials{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.socials .socialsIcon{
+    display: block;
+    font-size: 20px;
+}
+.socials a{
+    text-decoration: none;
+    color: inherit;
+    background-color: #ffffff0a;
+    border: 1px solid #ffffff12;
+    border-radius: 8px;
+    padding: 10px;
+}
+.socials a:hover{
+    color: #ffa500;
+}
+
+@media (max-width: 768px) {
+    .footerSection{
+        padding-inline: 24px;
+        gap: 30px;
+    }
+    .footerLine{
+        display: none;
+    }
+    .rightsAndSocials{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .socials{
+        gap: 20px;
+    }
+    .footerNameAndCareer{
+        align-items: center;
+        gap: 5px;
+    }
+    .footerNameAndCareer .dash{
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .footerSection{
+        padding-inline: 16px;
+        gap: 20px;
+    }
+    .rightsAndSocials{
+        gap: 10px;
+    }
+    .rightsAndSocials p{
+        font-weight: 300;
+    }
+}

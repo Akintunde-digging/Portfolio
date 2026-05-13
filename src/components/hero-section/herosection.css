@@ -1,0 +1,212 @@
+.heroSection{
+    position: relative;
+    scroll-margin-top: 70px;
+}
+.heroSection::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.78);
+  z-index: 1;
+}
+.heroContents{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    padding: 60px 10% 50px ;
+}
+.locationAndCareer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+    max-width: 600px;
+}
+.locationAndCareer .location{
+    font-size: 14px;
+    font-weight: 700;
+    color: #d1d5dc;
+    opacity: 0.8;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+.locationAndCareer .career{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #ffa500;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.career .dash{
+    background-color: #ffa500;
+    width: 40px;
+    height: 2px;
+}
+.h1p{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+.h1p h1{
+    font-size:70px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    line-height: 1.1;
+}
+.h1p p{
+    font-size: 18px;
+    font-weight: 600;
+    color: #d1d5dc;
+    line-height: 1.6;
+    margin-bottom: 48px;
+}
+.heroButtons{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 64px;
+    max-width: 600px;
+}
+.heroButtons button{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.heroButtons a{
+    text-decoration: none;
+}
+.heroButtons .connectButton{
+    border: 1px solid transparent;
+    color: #000;
+    background-color: #ffa500;
+}
+.heroButtons .resumeButton{
+    border: 1px solid #ffffff33;
+    background-color: transparent;
+    color: #fff;
+}
+.heroButtons .connectButton:hover{
+    color: #fff;
+    border: 1px solid #ffffff33;
+    background-color: transparent;
+}
+.heroButtons .resumeButton:hover{
+    color: #000;
+    border: 1px solid transparent;
+    background-color: #ffa500;
+}
+.arrowDownAndRight{
+    transition: transform 0.5s ease;
+    display: block;
+    font-size: 20px;
+}
+.heroButtons button:hover .arrowDownAndRight{
+    transform: translateY(5px)
+}
+.statsAndScroll{
+    display: flex;
+    padding-top: 32px;
+    border-top: 1px solid #ffffff1a;
+    max-width: 600px;
+    gap: 5px;
+}
+.stats{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.stats .stat{
+    display: flex;
+    flex-direction: column;
+}
+.stat h2{
+    font-size: 32px;
+    font-weight: 800;
+    color: #ffa500;
+}
+.stat p{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #d1d5dc;
+}
+.scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    opacity: 0.6;
+}
+.scroll p{
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #d1d5dc;
+}
+.scroll .bar{
+    width: 1.5px;
+    height: 50px;
+    background-color: #ffffff1a;
+    position: relative;
+    overflow: hidden;
+}
+.scroll .bar::after {
+    content: "";
+    position: absolute;
+    top: -30%;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background-color: #ffa500;
+    animation: slideDown 1.5s linear infinite;
+}
+@keyframes slideDown {
+    from { top: -30%; }
+    to { top: 100%; }
+}
+
+@media (max-width: 768px) {
+    .heroContents{
+        padding-inline: 24px;
+        align-items: center;
+        text-align: center;
+    }
+    .h1p h1{
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    .h1p p{
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .heroButtons{
+        flex-direction: column;
+        align-items: center;
+    }
+    .scroll{
+        display: none;
+    }
+    .stats{
+        align-items: center;
+        justify-content: center;
+    }
+    .stats .stat{
+        width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heroContents{
+        padding-inline: 16px;
+    }
+    .h1p h1{
+        font-size: 35px;
+    }
+    .locationAndCareer .location{
+        font-weight: 600;
+    }
+}
