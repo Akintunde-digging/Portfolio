@@ -2,6 +2,7 @@ import "./herosection.css";
 import { LuArrowDownRight, LuArrowRight  } from "react-icons/lu";
 import CountUp from "react-countup";
 import profile from "../../assets/launch.jpg";
+import resumePdf from "../../assets/Akintunde, Isaac 'Tobi CV..pdf";
 
 function HeroSection(){
     return(
@@ -18,7 +19,7 @@ function HeroSection(){
                 </div>
                 <div className="heroButtons">
                     <a href="#contact"><button className="connectButton">Connect With Me<LuArrowDownRight className="arrowDownAndRight"/></button></a>
-                    <a href="" target="_blank"><button className="resumeButton">My Resume<LuArrowRight className="arrowDownAndRight"/></button></a>
+                    <a href={resumePdf} target="_blank"><button className="resumeButton">My Resume<LuArrowRight className="arrowDownAndRight"/></button></a>
                 </div>
                 <div className="statsAndScroll">
                     <div className="stats">
