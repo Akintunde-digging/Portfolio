@@ -7,7 +7,7 @@ function MyProjects(){
             <h1>My Projects</h1>
             <div className="allProjects">
                 <div className="eachProjects">
-                    <a href="https://akintunde-movie-cart.vercel.app/">
+                    <a href="https://akintunde-movie-cart.vercel.app/" target="_blank" rel="noopener noreferrer">
                         <div className="imgDiv"><img src="https://res.cloudinary.com/ddehh0jdv/image/upload/v1778591291/moviecartImg_nvxjpg.png" alt="" /></div>
                         <div className="projectText">
                             <h3>Movie Cart</h3>
@@ -15,8 +15,8 @@ function MyProjects(){
                         </div>
                     </a>
                 </div>
-                <div className="eachProjects">
-                    <a href="https://thehospitalityamb.com/">
+                <div className="eachProjects" >
+                    <a href="https://thehospitalityamb.com/" target="_blank" rel="noopener noreferrer">
                         <div className="imgDiv"><img src="https://res.cloudinary.com/ddehh0jdv/image/upload/v1778595334/thaImg_yy49bw.png" alt="" /></div>
                         <div className="projectText">
                             <h3>The Hospitality Ambassador</h3>
@@ -25,7 +25,7 @@ function MyProjects(){
                     </a>
                 </div>
                 <div className="eachProjects">
-                    <a href="https://blackneon.wuaze.com/">
+                    <a href="https://blackneon.wuaze.com/" target="_blank" rel="noopener noreferrer">
                         <div className="imgDiv"><img src="https://res.cloudinary.com/ddehh0jdv/image/upload/v1778597414/blackneonImg_aghtrs.png" alt="" /></div>
                         <div className="projectText">
                             <h3>Black Neon</h3>
@@ -34,7 +34,7 @@ function MyProjects(){
                     </a>
                 </div>
                 <div className="eachProjects">
-                    <a href="https://thegrandeurhotel.vercel.app/">
+                    <a href="https://thegrandeurhotel.vercel.app/" target="_blank" rel="noopener noreferrer">
                         <div className="imgDiv"><img src="https://res.cloudinary.com/ddehh0jdv/image/upload/v1778599828/thegrandeurImg_vtyez8.png" alt="" /></div>
                         <div className="projectText">
                             <h3>The Grandeur</h3>

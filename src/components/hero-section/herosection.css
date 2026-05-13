@@ -6,7 +6,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.6);
   z-index: 1;
 }
 .heroContents{
@@ -207,6 +207,7 @@
         font-size: 35px;
     }
     .locationAndCareer .location{
-        font-weight: 600;
+        font-size: 12px;
+        font-weight: 800;
     }
 }
