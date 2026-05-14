@@ -54,6 +54,7 @@
 .eachContactDetails .contactIcon{
     display: block;
     font-size: 26px;
+    flex-shrink: 0;
 }
 form{
     display: flex;
@@ -67,7 +68,7 @@ form input{
     border: none;
     border-radius: 5px;
     background-color: #1c1c1c;
-    color: #d1d5dc8f;
+    color: #d1d5dc;
     font-size: 16px;
     font-weight: 500;
 }
@@ -77,7 +78,7 @@ form textarea{
     border-radius: 5px;
     background-color: #1c1c1c;
     padding: 30px 20px;
-    color: #d1d5dc8f;
+    color: #d1d5dc;
     font-size: 16px;
     font-weight: 500;
 }
