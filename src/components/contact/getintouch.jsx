@@ -53,7 +53,7 @@ const [loading, setLoading] = useState(false);
                         </div>
                         <div className="eachContactDetails">
                             <IoLocationOutline className="contactIcon"/>
-                            <span>5, Adekunle Osomo street, Soluyi, Gbagada, lagos.</span>
+                            <span>Soluyi, Gbagada, lagos.</span>
                         </div>
                     </div>
                 </div>

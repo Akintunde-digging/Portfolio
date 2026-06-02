@@ -11,6 +11,8 @@
 .footerNameAndCareer .footerAkintunde{
     font-size: 24px;
     font-weight: 900;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
 }
 .footerNameAndCareer .footerCareer{
     display: flex;
@@ -95,5 +97,11 @@
     }
     .rightsAndSocials p{
         font-weight: 300;
+    }
+    .socials .socialsIcon{
+        font-size: 24px;
+    }
+     .socials{
+        gap: 10px;
     }
 }

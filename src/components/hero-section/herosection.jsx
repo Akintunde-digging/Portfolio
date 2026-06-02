@@ -28,7 +28,7 @@ function HeroSection(){
                             <p>YEARS EXP.</p>
                         </div>
                         <div className="stat">
-                            <h2>5+</h2>
+                            <h2>7+</h2>
                             <p>PROJECTS</p>
                         </div>
                         <div className="stat">

@@ -7,6 +7,15 @@ function MyProjects(){
             <h1>My Projects</h1>
             <div className="allProjects">
                 <div className="eachProjects">
+                    <a href="https://akintunde-yesummitafrica.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        <div className="imgDiv"><img src="https://res.cloudinary.com/ddehh0jdv/image/upload/v1780331330/yesImg_hnxwaj.png" alt="YES image" /></div>
+                        <div className="projectText">
+                            <h3>YES</h3>
+                            <p>Youth Enterpreneurship Summit (YES) is a freelancing landing page project made with love for our client. The summit is to empower Africa's next generation of builders, Innovators and leaders.</p>
+                        </div>
+                    </a>
+                </div>
+                <div className="eachProjects">
                     <a href="https://akintunde-movie-cart.vercel.app/" target="_blank" rel="noopener noreferrer">
                         <div className="imgDiv"><img src="https://res.cloudinary.com/ddehh0jdv/image/upload/v1778591291/moviecartImg_nvxjpg.png" alt="movie cart image" /></div>
                         <div className="projectText">
@@ -21,6 +30,15 @@ function MyProjects(){
                         <div className="projectText">
                             <h3>The Hospitality Ambassador</h3>
                             <p>The hospitality ambassador help hospitality brands grow, it's a site for everything hospitality, from reservation to food, culture, event, entertainments and so on.</p>
+                        </div>
+                    </a>
+                </div>
+                <div className="eachProjects">
+                    <a href="https://akintunde-movie-cart.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        <div className="imgDiv"><img src="https://res.cloudinary.com/ddehh0jdv/image/upload/v1780332140/kudgerImg_bb67oc.png" alt="movie cart image" /></div>
+                        <div className="projectText">
+                            <h3>Kudger</h3>
+                            <p>Kudger is an eNaira offline access technology for every Nigerian.</p>
                         </div>
                     </a>
                 </div>

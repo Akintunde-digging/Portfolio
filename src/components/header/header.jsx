@@ -8,7 +8,7 @@ function Header(){
     return(
         <header>
             <nav className="navbar">
-                <div className="akintunde">AKINTUNDE</div>
+                <div className="akintunde"><a href="#home">AKINTUNDE</a></div>
                 <div className={`homeToContact ${menuOpen ? "open" : ""}`} id="navMenu">
                     <ul>
                         <li><a href="#home" onClick={() => setMenuOpen(false)}>Home</a></li>

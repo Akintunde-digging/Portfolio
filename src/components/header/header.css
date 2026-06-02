@@ -18,21 +18,27 @@ nav{
     align-items: center;
     padding: 20px 60px;
 }
-nav a{
+nav ul a{
     font-size: 16px;
     font-weight: 500;
     color: white;
     text-decoration: none;
 }
 
-nav a:hover {
+nav ul a:hover {
     color: orange;
 }
-.akintunde{
+nav .akintunde{
     font-size: 24px;
     font-weight: 900;
     -webkit-text-stroke: 1px #fff;
     color: transparent;
+}
+nav .akintunde a{
+    text-decoration: none;
+    color: transparent;
+    font-size: 24px;
+    font-weight: 900;
 }
 nav .navContactButton{
     background-color: #000;
