@@ -1,8 +1,8 @@
 import "./herosection.css";
 import { LuArrowDownRight, LuArrowRight  } from "react-icons/lu";
-import CountUp from "react-countup";
 import profile from "../../assets/launch.jpg";
 import resumePdf from "../../assets/Akintunde, Isaac 'Tobi CV..pdf";
+import CountUp from "../CountUp"
 
 function HeroSection(){
     return(
@@ -24,19 +24,19 @@ function HeroSection(){
                 <div className="statsAndScroll">
                     <div className="stats">
                         <div className="stat">
-                            <h2>2+</h2>
+                            <h2><CountUp target={2} suffix="+" /></h2>
                             <p>YEARS EXP.</p>
                         </div>
                         <div className="stat">
-                            <h2>7+</h2>
+                            <h2><CountUp target={7} suffix="+" /></h2>
                             <p>PROJECTS</p>
                         </div>
                         <div className="stat">
-                            <h2>5+</h2>
+                            <h2><CountUp target={5} suffix="+" /></h2>
                             <p>TECHNOLOGIES</p>
                         </div>
                         <div className="stat">
-                            <h2>100%</h2>
+                            <h2><CountUp target={100} suffix="%" /></h2>
                             <p>COMMITMENT</p>
                         </div>
                     </div>
