@@ -2,7 +2,7 @@ import "./herosection.css";
 import { LuArrowDownRight, LuArrowRight  } from "react-icons/lu";
 import profile from "../../assets/launch.jpg";
 import resumePdf from "../../assets/Akintunde, Isaac 'Tobi CV..pdf";
-import CountUp from "../CountUp"
+import CountUp from "../countup"
 
 function HeroSection(){
     return(
