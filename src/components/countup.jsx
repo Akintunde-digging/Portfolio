@@ -35,4 +35,4 @@ const CountUp = ({ target, suffix = "" }) => {
   return <span ref={ref}>0{suffix}</span>;
 };
 
-export default CountUp;
+export default CountUp; 
