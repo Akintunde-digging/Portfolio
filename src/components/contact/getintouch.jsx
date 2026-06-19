@@ -1,15 +1,22 @@
 import "./getintouch.css";
-import { LuMail, LuPhone } from "react-icons/lu";
+import { LuMail, LuPhone, LuCopy, LuCheck } from "react-icons/lu";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
 function GetInTouch(){
 const form = useRef();
 const [loading, setLoading] = useState(false);
+const [copied, setCopied] = useState(false);
 
+const handleCopy = () => {
+    navigator.clipboard.writeText("isaacakintunde11@gmail.com");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
   const sendEmail = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -42,6 +49,7 @@ const [loading, setLoading] = useState(false);
                         <div className="eachContactDetails">
                             <LuMail className="contactIcon"/>
                             <span><a href="mailto:isaacakintunde11@gmail.com" target="_blank">isaacakintunde11@gmail.com</a></span>
+                            <button onClick={handleCopy} title="Copy email" style={{ background: "none", border: "none", cursor: "pointer", padding: "2px", display: "flex", alignItems: "center", color: copied ? "green" : "inherit",}}> {copied ? <LuCheck size={14} /> : <LuCopy size={14} />}</button>
                         </div>
                         <div className="eachContactDetails">
                             <LuPhone className="contactIcon"/>
