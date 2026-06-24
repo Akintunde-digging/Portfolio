@@ -18,7 +18,7 @@ function AboutMe(){
         <div className="aboutMeSection" id="about">
             <div className="titleAndP">
                 <h1>About Me</h1>
-                <p>I am a Frontend Developer with experience building robust, scalable, and user-friendly web applications. Skilled in modern frontend technologies including JavaScript, React.js, WordPress. I focus on creating responsive interfaces and seamless digital experiences. Currently working at Greystone and Ink, where I develop and maintain modern web solutions across various projects.</p>
+                <p>I am a Frontend Developer with experience building robust, scalable, and user-friendly web applications. Skilled in modern frontend technologies including JavaScript, React.js, Wordpress. I focus on creating responsive interfaces and seamless digital experiences. Currently working at Greystone and Ink, where I develop and maintain modern web solutions across various projects.</p>
             </div>
             <div className="stacksAndPractices">
                 <div className="stacks">
@@ -43,6 +43,14 @@ function AboutMe(){
                         <div className="eachStackLogoAndName">
                             <img src={reactLogo} alt="reactLogo" />
                             <span>React.js</span>
+                        </div>
+                        <div className="eachStackLogoAndName">
+                            <img src="https://res.cloudinary.com/ddehh0jdv/image/upload/v1782304699/supabase-com-wordmark_jffxbp.png" alt="reactLogo" />
+                            <span>Supabase</span>
+                        </div>
+                        <div className="eachStackLogoAndName">
+                            <img src="https://res.cloudinary.com/ddehh0jdv/image/upload/v1782305256/WordPress-logotype-wmark_ruxsd0.png" alt="reactLogo" />
+                            <span>Wordpress</span>
                         </div>              
                     </div>
                 </div>
