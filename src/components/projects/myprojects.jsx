@@ -7,7 +7,7 @@ function MyProjects(){
             <h1>My Projects</h1>
             <div className="allProjects">
                 <div className="eachProjects">
-                    <a href="https://akintunde-yesummitafrica.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://yesummitafrica.vercel.app/" target="_blank" rel="noopener noreferrer">
                         <div className="imgDiv"><img src="https://res.cloudinary.com/ddehh0jdv/image/upload/v1780331330/yesImg_hnxwaj.png" alt="YES image" /></div>
                         <div className="projectText">
                             <h3>YES</h3>
