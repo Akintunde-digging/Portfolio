@@ -6,7 +6,7 @@ function Footer(){
     return(
         <div className="footerSection">
             <div className="footerNameAndCareer">
-                <h1 className="footerAkintunde">AKINTUNDE</h1>
+                <h1 className="footerAkintunde">&lt;AKINTUNDE/&gt;</h1>
                 <p className="footerCareer"><span className="dash"></span> Frontend Developer</p>
             </div>
             <div className="footerLine"></div>

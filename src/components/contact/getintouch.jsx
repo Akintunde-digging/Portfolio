@@ -71,7 +71,7 @@ const handleCopy = () => {
                     <label>Your Email</label>
                     <input type="email" placeholder="Enter your email" name="email" required/>
                     <label>Write Your Message</label>
-                    <textarea name="message" id="" rows="9" placeholder="Enter your message"></textarea>
+                    <textarea name="message" id="" rows="9" placeholder="Enter your message" required></textarea>
                     <button type="submit" disabled={loading}>{loading ? 'Submitting...' : 'Submit Now'}</button>
                     <ToastContainer />
                 </form>

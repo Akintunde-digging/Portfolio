@@ -29,7 +29,7 @@ nav ul a:hover {
     color: orange;
 }
 nav .akintunde{
-    font-size: 24px;
+    font-size: 23px;
     font-weight: 900;
     -webkit-text-stroke: 1px #fff;
     color: transparent;
@@ -37,7 +37,7 @@ nav .akintunde{
 nav .akintunde a{
     text-decoration: none;
     color: transparent;
-    font-size: 24px;
+    font-size: 23px;
     font-weight: 900;
 }
 nav .navContactButton{
