@@ -8,35 +8,70 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function GetInTouch(){
-const form = useRef();
 const [loading, setLoading] = useState(false);
 const [copied, setCopied] = useState(false);
+const [status, setStatus] = useState(null);
+const timeoutRef = useRef(null);
 
 const handleCopy = () => {
     navigator.clipboard.writeText("isaacakintunde11@gmail.com");
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
-  const sendEmail = (e) => {
-    e.preventDefault();
-    setLoading(true);
+//   const sendEmail = (e) => {
+//     e.preventDefault();
+//     setLoading(true);
 
-    emailjs.sendForm(
-      'service_156vl2b',
-      'template_xvzyifb',
-      form.current,
-      'TkbsoW0Tqo5U0s_Rc'
-    )
-    .then(() => {
-      toast.success('Message sent successfully!');
-      e.target.reset();
-      setLoading(false);
-    })
-    .catch(() => {
-      toast.error('Something went wrong, try again.');
-      setLoading(false);
-    });
-  };
+//     emailjs.sendForm(
+//       'service_156vl2b',
+//       'template_xvzyifb',
+//       form.current,
+//       'TkbsoW0Tqo5U0s_Rc'
+//     )
+//     .then(() => {
+//       toast.success('Message sent successfully!');
+//       e.target.reset();
+//       setLoading(false);
+//     })
+//     .catch(() => {
+//       toast.error('Something went wrong, try again.');
+//       setLoading(false);
+//     });
+//   };
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setLoading(true);
+        setStatus(null);
+
+        const formData = new FormData(e.target);
+        const payload = {
+            name: formData.get("name"),
+            email: formData.get("email"),
+            message: formData.get("message"),
+        };
+
+        try {
+            const res = await fetch("/api/send-enquiry", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload),
+            });
+
+            if (!res.ok) throw new Error("Send failed");
+
+            setStatus("success");
+            e.target.reset();
+        } catch (err) {
+            console.error(err);
+            setStatus("error");
+        }
+
+        setLoading(false);
+        if (timeoutRef.current) clearTimeout(timeoutRef.current);
+            timeoutRef.current = setTimeout(() => {
+                setStatus(null);
+            }, 6000);
+    };
 
     return(
         <div className="getInTouch" id="contact">
@@ -65,7 +100,7 @@ const handleCopy = () => {
                         </div>
                     </div>
                 </div>
-                <form action="" className="form" ref={form} onSubmit={sendEmail}>
+                <form className="form"  onSubmit={handleSubmit}>
                     <label>Your Name</label>
                     <input type="text" placeholder="Enter your name" name="name" required/>
                     <label>Your Email</label>
@@ -74,6 +109,8 @@ const handleCopy = () => {
                     <textarea name="message" id="" rows="9" placeholder="Enter your message" required></textarea>
                     <button type="submit" disabled={loading}>{loading ? 'Submitting...' : 'Submit Now'}</button>
                     <ToastContainer />
+                    {status === "success" && <p className="formSuccess">Message sent. We'll be in touch soon.</p>}
+                    {status === "error" && <p className="formError">Something went wrong. Please try again.</p>}
                 </form>
             </div>
         </div>

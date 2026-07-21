@@ -11,8 +11,8 @@ export default async function handler(req, res) {
 
     try {
         const { id } = await sendbyte.emails.send({
-            from: "Portfolio <noreply@yourportfolio.com>",
-            to: "yourpersonalemail@gmail.com",
+            from: "Portfolio <noreply@akintunde.cv>",
+            to: "isaacakintunde11@gmail.com",
             subject: `New portfolio enquiry from ${name}`,
             html: `
                 <p><strong>Name:</strong> ${name}</p>
