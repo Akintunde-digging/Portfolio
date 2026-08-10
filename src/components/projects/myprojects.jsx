@@ -8,6 +8,15 @@ function MyProjects(){
             <div className="allProjects">
                 <div className="eachProjects">
                     <a href="https://yesummitafrica.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        <div className="imgDiv"><img src="https://res.cloudinary.com/ddehh0jdv/image/upload/v1786366619/Screenshot_113_hhiiss.png" /></div>
+                        <div className="projectText">
+                            <h3>Grays Capital</h3>
+                            <p>Grays Capital is a modern, responsive corporate website for Grays Capital, showcasing its deal facilitation, capital advisory, investment readiness, portfolio, and investment opportunities across Africa.</p>
+                        </div>
+                    </a>
+                </div>
+                <div className="eachProjects">
+                    <a href="https://yesummitafrica.vercel.app/" target="_blank" rel="noopener noreferrer">
                         <div className="imgDiv"><img src="https://res.cloudinary.com/ddehh0jdv/image/upload/v1780331330/yesImg_hnxwaj.png" alt="YES image" /></div>
                         <div className="projectText">
                             <h3>YES</h3>
@@ -34,7 +43,7 @@ function MyProjects(){
                     </a>
                 </div>
                 <div className="eachProjects">
-                    <a href="https://akintunde-movie-cart.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://akintunde-kudger.vercel.app/" target="_blank" rel="noopener noreferrer">
                         <div className="imgDiv"><img src="https://res.cloudinary.com/ddehh0jdv/image/upload/v1780332140/kudgerImg_bb67oc.png" alt="movie cart image" /></div>
                         <div className="projectText">
                             <h3>Kudger</h3>
